@@ -1,0 +1,88 @@
+﻿<!doctype html>
+<html lang="en">
+  <!--bootstrap-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="index.js"></script>
+    <style>
+        img{
+            display:block;
+            margin:0 auto;
+        }
+
+        .button{
+                background-color: blue;
+                width: 215px;
+                height: 40px;
+                border-radius: 2.5rem;
+                padding: 1.5rem;
+                color: white;
+                align-items: center;
+                margin:0 auto;
+
+        }
+        #navbar{
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial,sans-serif;
+                display:flex;
+                align-items:center;
+                justify-content:space-between;
+                box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0rgba(0, 0, 0, 0.19);
+                margin:0px;
+                padding:20px;
+            }
+        a.active{
+                color:black;
+                text-decoration:underline;
+        }
+    </style>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title>The True Beat</title>
+    </head>
+    <body>
+        <div class="hero">
+        <a href="index.html"><img src ="image/logo.png"class="brandlogo" alt = ""></a>
+        </div>
+        <nav id="navbar">
+            <img src="images/logo.png" alt=""> 
+            <div>
+                <a href="index.html" class="active">Home</a>
+                <a href="shop.html">Products</a>  
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+            </div>
+        </nav>
+        <h1>Welcome</h1>
+        <h2>Let Your dream beat come true</h2>
+        <!--slideshow to show product -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img decoding="async" src="https://lineimg.omusic.com.tw/img/album/5376046.jpg?v=20220327120942" style="width:100%">
+              <div class="text">Ado 《Kyōgen》</div>
+            </div>
+           
+            <div class="mySlides fade">
+              <img decoding="async" src="https://cf.shopee.tw/file/fcceb6cfa83b72c2d2a3459411fa3099" style="width:100%">
+              <div class="text">Eve 《Culture》</div>
+            </div>
+           
+            <div class="mySlides fade">
+              <img decoding="async" src="https://upload.wikimedia.org/wikipedia/zh/0/0d/The_Book_by_YOASOBI.jpg" style="width:100%">
+              <div class="text">Yoasobi 《The book》</div>
+            </div>
+          </div>
+          <br>
+           
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+             
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+          <script  src="index.js"></script>
+          <center><a href="shop.html" class="button">Click here to view more</a></center>
+    
+    </body>
+</html>

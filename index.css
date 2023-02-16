@@ -1,0 +1,81 @@
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("image/logo.png");
+    background-repeat: no-repeat;
+    background-size: 100%, cover;
+}
+
+.navbar{
+    position:sticky;
+    top:0;
+    left:0;
+    width:100%;
+    background-color: white;
+}
+
+.nav{
+    padding:10px ;
+    display: flex;
+    justify-content: space-between;
+}
+
+body{
+    background-color: rgb(194, 194, 194);
+    color:white;
+}
+
+h1{
+    color:white;
+    margin:0 auto;
+    font-size:150px;
+    font-style:italic;
+}
+h2{
+    color:white;
+    margin-left:150px;
+    font-size:150px;
+}
+
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+ 
+/* slideshow-container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+ 
+ 
+.active, .dot:hover {
+  background-color: #717171;
+}
+ 
+/* fade out animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+ 
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+ 
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}

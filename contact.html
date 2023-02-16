@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--bootstrap-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <style>
+        .container{
+        margin:0 auto;
+        width:600px;
+
+}
+        .h2{
+                margin:0 auto;
+                color:white;
+}
+        .logo{
+                width:250px;
+                align-items:left;
+                display:flex;
+                flex-wrap:wrap;
+            }
+
+        #navbar{
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial,sans-serif;
+                display:flex;
+                align-items:center;
+                justify-content:space-between;
+                box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0rgba(0, 0, 0, 0.19);
+                margin:0px;
+                padding:20px;
+            }
+         a.active{
+                color:black;
+                text-decoration:underline;
+         }
+    </style>
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact</title>
+    <h2><marquee>Please write down your problems or opinions in the form below! We will help you as soon as possible, remember to give us your contact method.</marquee></h2>
+        <nav id="navbar">
+            <a href="index.html"><img class="logo" src="image/logo.png" alt=""></a>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="shop.html">Products</a>  
+                <a href="contact.html" class="active">Contact</a>
+                <a href="about.html">About</a>
+            </div>
+        </nav>
+</head>
+<body>
+    <div class="container">
+    <h1><b><size=24>Contact</b></h1>
+    <!--creating Tables -->
+    <table border="1" eidth="200" Height="200">
+        <tr>
+            <th>By</th>
+            <th>Working hours</th>
+            <th>Non-Working hours</th>
+        </tr>
+        <tr>
+            <td rowspan = "2">Phone number</td>
+            <td>7546864969</td>
+            <td>7845169754</td>
+        </tr>
+        <tr>
+            <td>7531765844</td>
+            <td>7543879841</td>
+        </tr>
+        <tr>
+            <td colspan = "3">Email address:thetruebeat123@gmail.com</td>
+        </tr>
+    </table>
+    <p>Also you can fill in the form below to tell us the problem.</p><br>  
+    <!--creating forms-->
+    <form action="mailto:thetruebeat123@gmail.com" enctype="text/plain">
+        Description:<br/>
+        <textarea rows="50" cols="50" name="Description">
+            Enter you problem and description here...
+        </textarea><br>
+        <input type ="submit" name="submit" value="submit">
+    </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
